@@ -1,0 +1,182 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHERUKURU PRASANTH - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #9f00ff, #ff6ec4);
+      color: white;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd6ff;
+    }
+
+    .contact-btn {
+      background: white;
+      color: #9f00ff;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .contact-btn:hover {
+      background: #ffd6ff;
+      color: #9f00ff;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .hero-text p {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      color: #f3e9ff;
+    }
+
+    .hero-text .btn {
+      margin-top: 30px;
+      display: inline-block;
+      background: white;
+      color: #9f00ff;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .hero-text .btn:hover {
+      background: #ffd6ff;
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .hero-image img {
+      max-width: 450px;
+      width: 100%;
+      margin-top: 30px;
+      opacity: 0.9; /* ✅ Image transparency added */
+    }
+
+    @media screen and (max-width: 768px) {
+      header {
+        padding: 20px;
+        flex-direction: column;
+      }
+
+      nav {
+        margin: 15px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero-image img {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Prasanth's Portfolio</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="Projects.html">Projects</a>
+      <a href="About.html">About</a>
+      <a href="Resume.html">Resume</a>
+      <a href="Certificates.html">Certificates</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+    <a href="tel:+91 9676240442" class="contact-btn">+91 9676240442</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hey!, I'm<br>CHERUKURU PRASANTH</h1>
+      <p>Building intelligent systems that imagine, create, and innovate.</p>
+      <a href="Contact.html" class="btn">Get in Touch</a>
+    </div>
+    <div class="hero-image">
+      <img src="https://www.pngmart.com/files/21/AI-PNG.png" alt="Developer Illustration">
+    </div>
+  </section>
+
+</body>
+</html>
+
